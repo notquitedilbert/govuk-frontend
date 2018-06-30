@@ -224,6 +224,33 @@ describe('Radios', () => {
       expect($lastConditional.attr('id')).toBe('conditional-example-conditional-2')
       expect($lastConditional.html()).toContain('Conditional content')
     })
+
+    it('render divider', () => {
+      const $ = render('radios', {
+        name: 'example-divider',
+        items: [
+          {
+            value: 'gateway',
+            text: 'Sign in with Government Gateway'
+          },
+          {
+            value: 'verify',
+            text: 'Sign in with GOV.UK Verify'
+          },
+          {
+            divider: 'or'
+          },
+          {
+            value: 'account',
+            text: 'Create an account'
+          }
+        ]
+      })
+
+      const $component = $('.govuk-radios')
+      const $divider = $component.find('.govuk-radios__divider')
+      expect($divider.text()).toBe('or')
+    })
   })
 
   describe('when they include a hint', () => {
