@@ -25,6 +25,12 @@
   You can now specify a heading level by providing
   `headingLevel: <number>` parameter. Default is `2`.
   ([PR #853](https://github.com/alphagov/govuk-frontend/pull/853))
+  
+- Allow for optional hint for each radio and checkbox item
+
+  You can now pass a hint object (or add in html) to each radio
+  and checkbox item to display the hint
+  ([PR #846](https://github.com/alphagov/govuk-frontend/pull/846))
 
 - Update date input component  
 
