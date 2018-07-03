@@ -26,7 +26,7 @@
   `headingLevel: <number>` parameter. Default is `2`.
   ([PR #853](https://github.com/alphagov/govuk-frontend/pull/853))
 
-- Update date input component  
+- Update date input component
 
   Allow the `name` and `id` attributes to be passed individually for each input item.
 
@@ -49,6 +49,11 @@
   https://github.com/alphagov/govuk-frontend/issues/868
 
   ([PR #858](https://github.com/alphagov/govuk-frontend/pull/858))
+
+- Allow for optional divider between radio items
+
+  You can now provide a divider item (e.g "or") to separate items
+  ([PR #849](https://github.com/alphagov/govuk-frontend/pull/849))
 
 
 🔧 Fixes:
