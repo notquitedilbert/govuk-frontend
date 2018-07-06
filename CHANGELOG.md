@@ -14,6 +14,12 @@
 
 🆕 New features:
 
+- Allow additional classes to be added to the radio and checkbox items
+
+  You can now provide `label: { classes: 'extra-class' }` to each item.
+
+  ([PR #880](https://github.com/alphagov/govuk-frontend/pull/880))
+
 - Add `govuk-visually-hidden-focusable` class
 
   Adds `.govuk-visually-hidden-focusable` and deprecates `.govuk-visually-hidden-focussable` in order to fix the typo in the class name. Please consider updating your code as the next major release will remove the deprecated class.
