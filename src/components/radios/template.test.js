@@ -224,6 +224,29 @@ describe('Radios', () => {
       expect($lastConditional.attr('id')).toBe('conditional-example-conditional-2')
       expect($lastConditional.html()).toContain('Conditional content')
     })
+
+    it('render additional label classes', () => {
+      const $ = render('radios', {
+        name: 'example-label-classes',
+        items: [
+          {
+            value: 'yes',
+            text: 'Yes',
+            label: {
+              classes: 'govuk-!-font-weight-bold'
+            }
+          },
+          {
+            value: 'no',
+            text: 'No'
+          }
+        ]
+      })
+
+      const $component = $('.govuk-radios')
+      const $firsLabel = $component.find('.govuk-radios__item:first-child label')
+      expect($firsLabel.hasClass('govuk-!-font-weight-bold')).toBeTruthy()
+    })
   })
 
   describe('when they include a hint', () => {
