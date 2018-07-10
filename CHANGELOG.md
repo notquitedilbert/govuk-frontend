@@ -26,7 +26,7 @@
   `headingLevel: <number>` parameter. Default is `2`.
   ([PR #853](https://github.com/alphagov/govuk-frontend/pull/853))
 
-- Update date input component  
+- Update date input component
 
   Allow the `name` and `id` attributes to be passed individually for each input item.
 
@@ -58,6 +58,11 @@
   Update the Crown copyright link on the National Archives so
   we don't send users on an unnecessary redirect.
   ([PR #824](https://github.com/alphagov/govuk-frontend/pull/824))
+
+- Allow og:image meta tag url to be set independantly
+  Image url for the opengraph image needs to be absolute and
+  can now be overwritten by setting the `assetUrl` variable.
+  ([PR #847](https://github.com/alphagov/govuk-frontend/pull/847))
 
 - Fixes radio and checkbox labels extending full width of page
   ([PR #821](https://github.com/alphagov/govuk-frontend/pull/821))
